@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dinner Party Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        color: #333;
+        padding: 0;
+        margin: 0;
+      }
+      header {
+        background: #55423d;
+        color: #fff;
+        padding: 2rem;
+        text-align: center;
+      }
+      .bcontainer {
+        display: flex;
+        gap: 1rem; /* optional spacing between columns */
+        padding: 1rem;
+        width: 80%; /* 80% width of the viewport */
+        margin: 0 auto; /* center the container */
+      }
+      .column {
+        flex: 1; /* each column takes up equal width */
+        padding: 1rem;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+      }
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+      .hero {
+        width: 100%;
+        max-height: 500px;
+        overflow: hidden;
+      }
+      .img-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .hero img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+      }
+      .img-fluid {
+        max-width: 80%;
+        height: auto;
+        display: block;
+      }
+
+      section {
+        padding: 1.5rem;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h2 {
+        color: #55423d;
+        margin-top: 2rem;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 0.25rem;
+      }
+      ul {
+        padding-left: 1.2rem;
+      }
+      .map iframe {
+        width: 100%;
+        height: 250px;
+        border: none;
+        border-radius: 0.5rem;
+      }
+      footer {
+        background: #55423d;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      a {
+        color: #55423d;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Join Us...</h1>
+      <p>Saturday, September 6 at 6:00 PM</p>
+    </header>
+
+    <!-- Hero image section -->
+    <div class="bcontainer">
+      <div class="column">
+        <div class="img-container">
+          <img
+            class="img-fluid"
+            src="assets/ivt_1.jpg"
+            alt="Invite Image"
+            style="margin-top: 15px"
+          />
+        </div>
+      </div>
+      <div class="column">
+        <div class="img-container">
+          <div style="width: 100%">
+            <h3 style="text-align: center; margin-top: 10px">
+              Hey - Come Party With Us!
+            </h3>
+
+            <p>Help us celebrate being together!</p>
+
+            <p>Will be dancing, drinks, and delicious dinner for your belly</p>
+
+            <p>
+              We're going to add a bunch more details about it here soon ...
+              including notes on travel, hotels, etc.
+            </p>
+          </div>
+        </div>
+
+        <h3 style="text-align: center; margin-top: 10px">
+          In the meantime - click below to send us a note!
+        </h3>
+
+        <div class="img-container">
+          <script
+            src="https://cdn.jotfor.ms/s/static/latest/feedback2.js"
+            type="text/javascript"
+          ></script>
+          <script type="text/javascript">
+            var JFL_251764658902062 = new JotformFeedback({
+              formId: "251764658902062",
+              base: "https://form.jotform.com/",
+              windowTitle: "Send us a note!",
+              backgroundColor: "#FFA500",
+              fontColor: "#FFFFFF",
+              type: "false",
+              height: 500,
+              width: 700,
+              openOnLoad: false,
+            });
+          </script>
+          <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
+          <script>
+            window.jotformEmbedHandler(
+              "iframe[id='251764658902062']",
+              "https://form.jotform.com/"
+            );
+          </script>
+          <a
+            class="btn lightbox-251764658902062"
+            style="
+              margin-top: 16px;
+              text-transform: uppercase;
+              font-size: 24px;
+              text-decoration: none;
+              cursor: pointer;
+              display: inline-block;
+              padding: 10px;
+              font-family: inherit;
+              text-shadow: none;
+              user-select: none;
+              transition: all, 0.1s, ease-in;
+              background-color: #ffa500;
+              border: 1px solid #ffa500;
+              color: #ffffff;
+            "
+          >
+            Send us a note!
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--  End bConatiner -->
+
+    <!--     
+    <section id="venue-menu">
+      <h2>Where's it at?</h2>
+      <img style="max-width: 10%" src="assets/cw-logo.png" />
+      <p>
+        <strong>Location:</strong> 1200 West Randolph Street, Chicago, IL 60607
+      </p>
+
+      <h3>What You'll Eat...</h3>
+      <ul>
+        <li>Appetizers: Cheese board & charcuterie</li>
+        <li>Main: Herb-roasted chicken with vegetables</li>
+        <li>Dessert: Flourless chocolate cake</li>
+        <li>Drinks: Red/white wine, sparkling water</li>
+      </ul>
+    </section>
+
+    <section id="timeline">
+      <h2>Timeline for the Evening...</h2>
+      <ul>
+        <li>6:00 PM — Arrival & Drinks</li>
+        <li>7:00 PM — Dinner Served</li>
+        <li>9:00 PM — Dessert & Games</li>
+      </ul>
+    </section>
+
+    <section id="directions">
+      <h2>Directions & Getting Around</h2>
+      <p>
+        There is guest parking at the back entrance. Please use the side gate to
+        enter the garden.
+      </p>
+    </section>
+
+    <section id="hotels">
+      <h2>Our Favorite Hotels - if you need 'em...</h2>
+      <ul>
+        <li><a href="#">Hotel</a> — 1 mile away</li>
+        <li><a href="#">Hotel</a> — 2.5 miles away</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+    </section> -->
+
+    <footer>
+      &copy; 2025 Our Dinner Party — Looking forward to seeing you!
+    </footer>
+  </body>
+</html>
