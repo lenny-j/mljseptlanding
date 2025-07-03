@@ -96,6 +96,36 @@
           font-size: 1.5rem;
         }
       }
+      .info-card {
+  height: 180px;
+        max-width: 400px;
+  padding: 20px;
+  /* padding: 5px 20px 20px 20px; */
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  transition: transform 0.2s ease-in-out;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  color: #384048;
+  text-align: center;
+}
+
+.card-content {
+  font-size: 1em;
+  color: #555;
+}
+
     </style>
   </head>
   <body>
@@ -125,7 +155,7 @@
 
             <p>Help us celebrate being together!</p>
 
-            <p>Will be dancing, drinks, and delicious dinner for your belly</p>
+            <p>There will be dancing, drinks, and delicious dinner for your belly.</p>
 
             <p>
               We're going to add a bunch more details about it here soon ...
@@ -187,7 +217,53 @@
         </div>
       </div>
     </div>
-    <!--  End bConatiner -->
+    <!--  End header bcontainer -->
+
+
+    <section id="menu">
+       
+      <h2>The Most Important thing - what you can EAT!</h2>
+<p>Menu options for the evening - let us know your selection with your RSVP!</p>
+<div style="text-align: center;">
+<p>Option 1: Hanger Steak, garlic butter, grilled asparagus, and roasted fingerling potatoes</p>
+<p>Option 2: Roasted Herb Chicken, polenta, sautéed brussels sprouts, mushroom cream sauce</p>
+<p>Option 3: Stuffed Roasted Acorn Squash, quinoa, dried cherries, curried coconut sauce</p></div>
+
+      </section>
+    
+       <section id="hotels">
+       
+      <h2>Our Favorite Hotels - if you need 'em...</h2>
+      
+      <div class="bcontainer"><div class="column">
+     <div class="info-card">
+  <h2 class="card-title"><a href="https://www.marriott.com/en-us/hotels/chigs-sheraton-grand-chicago-riverwalk/overview/" target="_blank">Sheraton Grand Chicago</a></h2>
+  <p class="card-content">Big and basic hotel! Rooms can be dated but it gets the job done just fine.</p>
+</div></div>
+<div class="column">
+  <div class="info-card">
+  <h2 class="card-title"><a href="https://www.thelasallechicago.com/" target="_blank">The LaSalle Chicago</a></h2>
+  <p class="card-content">Neat place in the financial district! 
+Finding reception is a little funky, but the rooms are nice and I ate all the mini bar pringles last time I was here : )
+</p>
+</div>
+</div>
+</div>
+<div class="bcontainer"><div class="column">
+     <div class="info-card">
+  <h2 class="card-title"><a href="https://www.sofitel-chicago.com/" target="_blank">Sofitel Chicago</a></h2>
+  <p class="card-content">Lots of French stuff - Oui!
+It's quite plush - I like to walk around the lobby in my dress shoes to make a lot of noise.</p>
+</div></div>
+<div class="column">
+  <div class="info-card">
+  <h2 class="card-title"><a href="https://www.swissotel.com/hotels/chicago/" target="_blank">Swissotel</a></h2>
+  <p class="card-content">Cool spot close to the river, the lake, and Mag Mile if you wanna shop at the fancy stores. We do staycations here.
+</p>
+</div>
+</div>
+</div>
+    </section>
 
     <!--     
     <section id="venue-menu">
